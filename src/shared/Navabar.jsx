@@ -85,13 +85,13 @@ export function NavBar() {
             <img
               src={smLogo}
               alt="Logo"
-              className="z-10 block lg:hidden  w-[165px] lg:h-[80px] md:h-[50px]  transition-all duration-500 transform ease-in-out scale-110 opacity-100"
+              className="z-10 block lg:hidden lg:h-[80px] w-[165px] md:h-[50px] h-[48px] transition-all duration-500 transform ease-in-out scale-110 opacity-100"
             />
           ) : (
             <img
               src={smLogo}
               alt="Logo"
-              className="z-10 lg:h-[80px] md:h-[50px]  w-[165px]   transition-all duration-500 transform ease-in-out scale-110 opacity-100"
+              className="z-10 lg:h-[80px] lg:w-auto w-[165px] md:h-[50px] h-[48px] transition-all duration-500 transform ease-in-out scale-110 opacity-100"
             />
           )}
 
@@ -166,25 +166,26 @@ export function NavBar() {
                 ))}
               </ul>
               <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0  lg:items-center lg:gap-6">
-                <div className="flex gap-2 items-center px-3 py-2 text-[#ED00FF]">
+                <div className="flex gap-2 items-center  py-2 text-[#ED00FF]">
                   <img src={tikTok} className="h-5 w-5 object-cover" />
                   <span>TikTok</span>
                 </div>
-                <div className="flex gap-2 items-center px-3 py-2 text-[#ED00FF]">
+                <div className="flex gap-2 items-center  py-2 text-[#ED00FF]">
                   <img src={twitter} className="h-5 w-5 object-cover" />
                   <span>Twitter</span>
                 </div>
-                <div className="flex gap-2 items-center px-3 py-2 text-[#ED00FF]">
+                <div className="flex gap-2 items-center  py-2 text-[#ED00FF]">
                   <img src={facebook} className="h-5 w-5 object-cover" />
                   <span>Facebook</span>
                 </div>
-                <div className="flex gap-2 items-center px-3 py-2 text-[#ED00FF]">
+                <div className="flex gap-2 items-center  py-2 text-[#ED00FF]">
                   <img src={youTube} className="h-5 w-5 object-cover" />
                   <span>Youtube</span>
                 </div>
 
-                <button className="btnBg text-white px-3 py-2 rounded-md w-full">
-                  Play now
+                <button className="relative px-6 py-3 text-white font-bold bg-[#ED00FF] rounded-lg hover:bg-pink-600 focus:outline-none  border-2 border-[#28194c]">
+                  <span className="absolute inset-0 bg-[#E9E74C] -z-10 translate-y-1 translate-x-1 rounded-lg"></span>
+                  PLAY NOW
                 </button>
               </ul>
             </div>
