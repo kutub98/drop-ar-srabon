@@ -52,15 +52,20 @@ export function NavBar() {
       <img src={twitter} className="h-5 w-5 object-cover" />
       <img src={facebook} className="h-5 w-5 object-cover" />
       <img src={youTube} className="h-5 w-5 object-cover" />
-      <button className="btnBg text-white px-3 py-2 rounded-md">
-        Play now
+      <button className="relative px-6 py-3 text-white font-bold bg-[#ED00FF] rounded-lg hover:bg-pink-600 focus:outline-none  border-2 border-[#28194c]">
+        <span className="absolute inset-0 bg-[#E9E74C] -z-10 translate-y-1 translate-x-1 rounded-lg"></span>
+        PLAY NOW
       </button>
     </ul>
   );
 
   return (
     <>
-      <div className="relative w-full primaryBg">
+      <div
+        className={`relative w-full primaryBg ${
+          scrollDown ? "min-h-screen" : ""
+        }`}
+      >
         {/* Background Image */}
         <div
           className="absolute top-0 left-0 w-full bg-cover bg-center z-0"
@@ -188,9 +193,9 @@ export function NavBar() {
 
         {/* Scroll Down Animation Section */}
         {scrollDown && (
-          <div className="primaryBg w-full flex justify-center items-center transform transition duration-500 origin-bottom">
+          <div className="primaryBg relative w-full flex justify-center items-center transform transition duration-500 origin-bottom">
             <img
-              className="mt-20 animate-pulse"
+              className=" mt-32 animate-pulse"
               src={bigLogo}
               alt="Logo"
               height={260}
@@ -201,8 +206,8 @@ export function NavBar() {
 
       {/* Scroll Indicator and Action */}
       {scrollDown && (
-        <div className="relative primaryBg  justify-center items-center pt-16 pb-10">
-          <img src={vector} alt="vector" height={10} className="" />
+        <div className="relative primaryBg bottomVector   justify-center items-center ">
+          <img src={vector} alt="vector" height={10} className="w-full" />
 
           <img
             src={vector2}
@@ -215,7 +220,7 @@ export function NavBar() {
             src={scrollIcon}
             alt="scroll-icon"
             height={50}
-            className="mx-auto cursor-pointer animate-bounce lg:mt-[-250px] md:mt-[-180px]"
+            className="mx-auto cursor-pointer animate-bounce lg:mt-[-350px] xl:mt-[-400px] md:mt-[-180px] mt-[-300px] "
           />
         </div>
       )}

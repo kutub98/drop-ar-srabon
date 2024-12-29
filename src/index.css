@@ -16,3 +16,9 @@ body {
 .btnBg {
   background-color: #ed00ff;
 }
+
+@media screen and (min-width: 300px) and (max-width: 550px) {
+  .bottomVector {
+    margin-bottom: -227px !important;
+  }
+}
