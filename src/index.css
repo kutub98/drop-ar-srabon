@@ -17,6 +17,12 @@ body {
   background-color: #ed00ff;
 }
 
+.text-outline-purple {
+  color: #fff;
+  text-shadow: -4px -4px 0 #6b21a8, 4px -4px 0 #6b21a8, -4px 4px 0 #6b21a8,
+    4px 4px 0 #6b21a8;
+}
+
 @media screen and (min-width: 300px) and (max-width: 550px) {
   .bottomVector {
     margin-bottom: -227px !important;

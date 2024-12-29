@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@font-face {
+  font-family: "withOutline"; /*Can be any text*/
+  src: local("AirbnbCerealLight"),
+    url("./fonts/KGTheLastTimeBubble.ttf") format("truetype");
+}
+@font-face {
+  font-family: "withLine"; /*Can be any text*/
+  src: local("AirbnbCerealLight"),
+    url("./fonts/KGTheLastTime.ttf") format("truetype");
+}
+
+body {
+  font-family: "Inter", serif;
+}
+.withOutline {
+  font-family: "withOutline";
+}
+.withLine {
+  font-family: "withLine";
+}
+.w-7 {
+  display: none;
+}
