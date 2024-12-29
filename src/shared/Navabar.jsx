@@ -85,13 +85,13 @@ export function NavBar() {
             <img
               src={smLogo}
               alt="Logo"
-              className="z-10 block md:hidden lg:h-[80px] md:h-[50px] h-[30px] transition-all duration-500 transform ease-in-out scale-110 opacity-100"
+              className="z-10 block lg:hidden  w-[165px] lg:h-[80px] md:h-[50px]  transition-all duration-500 transform ease-in-out scale-110 opacity-100"
             />
           ) : (
             <img
               src={smLogo}
               alt="Logo"
-              className="z-10 lg:h-[80px] md:h-[50px] h-[30px] transition-all duration-500 transform ease-in-out scale-110 opacity-100"
+              className="z-10 lg:h-[80px] md:h-[50px]  w-[165px]   transition-all duration-500 transform ease-in-out scale-110 opacity-100"
             />
           )}
 
