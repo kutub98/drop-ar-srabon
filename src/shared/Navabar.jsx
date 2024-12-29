@@ -100,22 +100,22 @@ export function NavBar() {
 
           {/* Mobile Menu Button */}
           <Button
-            className="lg:hidden z-10"
+            className="lg:hidden z-10 primaryBg text-white"
             onClick={openDrawer}
             variant="text"
-            color="white"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
+              strokeWidth="1.5"
               stroke="currentColor"
-              className="h-5 w-5"
+              className="size-6"
             >
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                d="M4 6h16M4 12h16M4 18h16"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
               />
             </svg>
           </Button>
@@ -139,7 +139,7 @@ export function NavBar() {
                   viewBox="0 0 24 24"
                   strokeWidth={2}
                   stroke="currentColor"
-                  className="h-5 w-5"
+                  className="h-6 w-6"
                 >
                   <path
                     strokeLinecap="round"
