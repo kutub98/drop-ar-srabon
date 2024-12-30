@@ -5,9 +5,9 @@ const VideoSection = () => {
   return (
     <section className="z-0 p-4 bg-gradient-to-t from-[#383D99] to-[#341E6A]  text-center relative">
       {/* Top Image */}
-      {/* <div className="absolute top-6 z-10 left-0 w-full">
-        <img src={vector} alt="Top Design" className="w-full h-10" />
-      </div> */}
+      <div className="absolute top-6 z-10 left-0 w-full">
+        <img src={vector2} alt="Top Design" className="w-full h-10" />
+      </div>
 
       <VideoA />
 
