@@ -4,9 +4,11 @@ import img2 from "../assets/1.png";
 import diamond from "../assets/diamond.png";
 import coin from "../assets/coin.png";
 import Review from "./Review";
+import vector2 from "../assets/Group5-1.png";
+
 const DetailsAndReview = () => {
   return (
-    <div className="px-4 primaryBg relative">
+    <div className="px-4 h-auto relative primaryBg z-0 ">
       {/* 1st one  */}
       <div className=" w-full max-w-6xl mx-auto grid gird-cols-1 md:grid-cols-2 items-center gap-14">
         <div className=" order-2 md:order-1 text-center items-center justify-center flex">
@@ -69,7 +71,25 @@ const DetailsAndReview = () => {
 
       {/* review  */}
 
-      <Review />
+      <div className="  w-full">
+        <Review />
+      </div>
+
+      <div className="px-4 h-auto relative primaryBg z-0">
+        <div className="relative w-full">
+          <div className="absolute inset-0 flex justify-center items-end mb-4 z-10">
+            <button className="relative px-6 py-3 text-white font-bold bg-[#ED00FF] rounded-lg hover:bg-pink-600 focus:outline-none border-2 border-[#28194c]">
+              <span className="absolute inset-0 bg-[#E9E74C] -z-10 translate-y-1 translate-x-1 rounded-lg"></span>
+              PLAY NOW
+            </button>
+          </div>
+          <img
+            src={vector2}
+            alt="Bottom Design"
+            className="object-cover w-full h-10 z-0"
+          />
+        </div>
+      </div>
     </div>
   );
 };

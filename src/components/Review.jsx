@@ -2,7 +2,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import star from "../assets/start.png";
 import subtract from "../assets/Subtract.png";
-
+import vector2 from "../assets/Group5-1.png";
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
@@ -20,7 +20,7 @@ const responsive = {
 
 export default function ResponsiveCarousel() {
   return (
-    <div className="w-full max-w-6xl mx-auto">
+    <div className="w-full primaryBg relative max-w-6xl mx-auto mb-20">
       <div className="text-center flex flex-col gap-2 mt-10">
         <h1 className="text-2xl md:text-3xl lg:text-4xl withLine text-white">
           What People are Saying
