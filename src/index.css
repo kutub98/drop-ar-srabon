@@ -22,7 +22,12 @@ body {
   text-shadow: -4px -4px 0 #6b21a8, 4px -4px 0 #6b21a8, -4px 4px 0 #6b21a8,
     4px 4px 0 #6b21a8;
 }
-
+.react-multi-carousel-dot button {
+  border-color: #ed00ff !important;
+}
+.react-multi-carousel-dot--active button {
+  background: #ed00ff !important;
+}
 @media screen and (min-width: 300px) and (max-width: 550px) {
   .bottomVector {
     margin-bottom: -227px !important;

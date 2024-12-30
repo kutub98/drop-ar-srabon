@@ -22,3 +22,7 @@ body {
 .w-7 {
   display: none;
 }
+
+.react-multiple-carousel__arrow {
+  display: none !important;
+}
