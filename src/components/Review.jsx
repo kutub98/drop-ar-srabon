@@ -2,7 +2,6 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import star from "../assets/start.png";
 import subtract from "../assets/Subtract.png";
-import vector2 from "../assets/Group5-1.png";
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },

@@ -43,7 +43,7 @@ const DetailsAndReview = () => {
           </h1>
           <h1 className="text-white mt-5">
             We are gamers building games for gamers. Blockchain is a feature,
-            not the focus.  Dictumst auctor sollicitudin consequat nisl pharetra
+            not the focus. Dictumst auctor sollicitudin consequat nisl pharetra
             scelerisque elit.
           </h1>
           <div className="my-6 flex flex-col gap-3">
