@@ -3,7 +3,7 @@ import heroBottomImg from "../assets/heroBottomImg.png";
 
 const HeroSection = () => {
   return (
-    <div className="relative primaryBg z-0 text-center  overflow-hidden pb-5">
+    <div className="relative primaryBg z-0 text-center  overflow-hidden pb-5 py-10">
       {/* Text Section */}
       <div className="relative z-10 p-4 md:my-5 lg:my-10 my-4">
         <h1 className="text-3xl text-center md:text-5xl font-extrabold text-white relative">
