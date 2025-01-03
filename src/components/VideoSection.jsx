@@ -4,11 +4,6 @@ import image from "../assets/8-final.png";
 const VideoSection = () => {
   return (
     <section className="z-0 p-4 bg-gradient-to-t from-[#383D99] to-[#341E6A]  text-center relative">
-      {/* Top Image */}
-      <div className="absolute top-6 z-10 left-0 w-full">
-        <img src={vector2} alt="Top Design" className="w-full h-10" />
-      </div>
-
       <VideoA />
 
       {/* Content Below the Video */}
@@ -36,12 +31,8 @@ const VideoSection = () => {
       </div>
 
       {/* Bottom Image */}
-      <div className="absolute bottom-0 left-0 w-full">
-        <img
-          src={vector2}
-          alt="Bottom Design"
-          className="w-full object-cover h-10 z-0"
-        />
+      <div className="absolute -bottom-1 left-0 w-full">
+        <img src={vector2} alt="Bottom Design" className="w-full z-0" />
       </div>
     </section>
   );

@@ -1,9 +1,9 @@
 import PlayNowButton from "./customButton";
-import heroBottomImg from "../assets/heroBottomImg.png";
+import heroBottomImg from "../assets/Group 6.svg";
 
 const HeroSection = () => {
   return (
-    <div className="relative primaryBg z-0 text-center  overflow-hidden pb-5 py-10">
+    <div className="relative primaryBg  z-0 text-center  overflow-hidden  pt-10 pb-0 px-4">
       {/* Text Section */}
       <div className="relative z-10 p-4 md:my-5 lg:my-10 my-4">
         <h1 className="text-3xl text-center md:text-5xl font-extrabold text-white relative">
@@ -21,13 +21,17 @@ const HeroSection = () => {
       </div>
 
       {/* Button Section */}
-      <div className="relative z-10 mt-2">
+      <div className="relative z-10 md:my-2 mb-10">
         <PlayNowButton></PlayNowButton>
       </div>
 
       {/* Background Image */}
       <div className="absolute bottom-0 left-0 right-0 ">
-        <img src={heroBottomImg} alt="Background" className="w-full h-10 " />
+        <img
+          src={heroBottomImg}
+          alt="Background"
+          className="w-full object-cover"
+        />
       </div>
     </div>
   );

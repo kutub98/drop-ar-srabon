@@ -1,6 +1,6 @@
 import bottomImg from "../assets/Ellipse 5.png";
 import middleImg from "../assets/Frame 5.png";
-import vector2 from "../assets/Group5-1.png";
+import vector2 from "../assets/Group 5.svg";
 import img1 from "../assets/9.png";
 import img2 from "../assets/2-2.png";
 import img3 from "../assets/3.png";
@@ -80,19 +80,19 @@ const GoldenEra = () => {
         </div>
       </div>
       {/* button */}
-      <div className="flex justify-center mt-5 mb-10 ">
-        <button className="relative px-6 py-3 text-white font-bold bg-[#ED00FF] rounded-lg hover:bg-pink-600 focus:outline-none  border-2 border-[#28194c]">
+      <div className="flex justify-center md:my-10 xl:my-32 mb-20  ">
+        <button className="relative w-full md:w-auto px-6 py-3 text-white font-bold bg-[#ED00FF] rounded-lg hover:bg-pink-600 focus:outline-none  border-2 border-[#28194c]">
           <span className="absolute inset-0 bg-[#E9E74C] -z-10 translate-y-1 translate-x-1 rounded-lg"></span>
           PLAY NOW
         </button>
       </div>
 
       {/* Bottom Image */}
-      <div className="absolute -bottom-0 mt-10 left-0 w-full primaryBg">
+      <div className="absolute bottom-0 left-0 w-full primaryBg">
         <img
           src={vector2}
           alt="Bottom Design"
-          className=" object-fill w-full  h-10 z-0"
+          className=" object-fill w-full   z-0"
         />
       </div>
     </div>

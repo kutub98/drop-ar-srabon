@@ -11,7 +11,7 @@ export default function VideoA() {
 
   return (
     <Carousel
-      className="relative py-8 z-10 w-full max-w-5xl mx-auto bg-[#28194C80] rounded-lg overflow-hidden "
+      className="relative md:py-8 py-0 z-10 w-full max-w-5xl mx-auto bg-[#28194C80] rounded-lg overflow-hidden "
       navigation={({ setActiveIndex, activeIndex, length }) => (
         <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-4">
           {new Array(length).fill("").map((_, i) => (

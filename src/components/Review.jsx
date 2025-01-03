@@ -19,7 +19,7 @@ const responsive = {
 
 export default function ResponsiveCarousel() {
   return (
-    <div className="w-full primaryBg relative max-w-6xl mx-auto mb-20">
+    <div className="w-full primaryBg relative max-w-6xl mx-auto">
       <div className="text-center flex flex-col gap-2 mt-10">
         <h1 className="text-2xl md:text-3xl lg:text-4xl withLine text-white">
           What People are Saying
