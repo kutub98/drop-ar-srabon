@@ -100,7 +100,7 @@ export function NavBar() {
 
           {/* Mobile Menu Button */}
           <Button
-            className="lg:hidden z-10 primaryBg text-white"
+            className="lg:hidden z-10 p-0 primaryBg text-white "
             onClick={openDrawer}
             variant="text"
           >
