@@ -25,7 +25,7 @@ const VideoSection = () => {
           <img
             src={image}
             alt="Gaming Image"
-            className="w-full  h-auto max-w-[919px] object-cover"
+            className="w-full  h-auto max-w-[919px] object-cover z-[1]"
           />
         </div>
       </div>
