@@ -62,7 +62,7 @@ export function NavBar() {
   return (
     <>
       <div
-        className={`relative w-full primaryBg ${
+        className={`relative overflow-hidden w-full primaryBg px-4 ${
           scrollDown ? "min-h-screen" : ""
         }`}
       >
@@ -196,7 +196,7 @@ export function NavBar() {
         {scrollDown && (
           <div className="primaryBg relative w-full flex justify-center items-center transform transition duration-500 origin-bottom">
             <img
-              className=" mt-32 animate-pulse"
+              className=" mt-32 lg:mt-20 animate-pulse"
               src={bigLogo}
               alt="Logo"
               height={260}
@@ -207,21 +207,53 @@ export function NavBar() {
 
       {/* Scroll Indicator and Action */}
       {scrollDown && (
-        <div className="relative primaryBg bottomVector   justify-center items-center ">
-          <img src={vector} alt="vector" height={10} className="w-full" />
+        // <div className="relative primaryBg bottomVector   justify-center items-center ">
+        //   <img src={vector} alt="vector" height={10} className="w-full" />
 
+        //   <img
+        //     src={vector2}
+        //     alt="vector-bottom"
+        //     height={10}
+        //     className="absolute  w-full left-0"
+        //   />
+        //   <img
+        //     onClick={() => {
+        //       setScrollDown(false);
+        //       window.scrollTo({
+        //         top: 0,
+        //         behavior: "smooth"
+        //       });
+        //     }}
+        //     src={scrollIcon}
+        //     alt="scroll-icon"
+        //     height={50}
+        //     className="mx-auto cursor-pointer animate-bounce lg:mt-[-350px] xl:mt-[-400px] md:mt-[-180px] mt-[-300px]"
+        //   />
+        // </div>
+        <div
+          className="bottom-0 w-full md:h-[180px]  mt-10 absolute flex flex-col justify-center items-center "
+          style={{
+            backgroundImage: `url(${vector})`,
+            objectFit: "object-cover"
+          }}
+        >
+          <img
+            onClick={() => {
+              setScrollDown(false);
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+              });
+            }}
+            src={scrollIcon}
+            alt="scroll-icon"
+            className="mx-auto cursor-pointer animate-bounce mb-10 "
+          />
           <img
             src={vector2}
             alt="vector-bottom"
             height={10}
-            className="absolute  w-full left-0"
-          />
-          <img
-            onClick={() => setScrollDown(false)}
-            src={scrollIcon}
-            alt="scroll-icon"
-            height={50}
-            className="mx-auto cursor-pointer animate-bounce lg:mt-[-350px] xl:mt-[-400px] md:mt-[-180px] mt-[-300px] "
+            className="  w-full absolute bottom-0"
           />
         </div>
       )}

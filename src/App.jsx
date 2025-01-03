@@ -3,7 +3,7 @@ import Router from "./Router/Router";
 
 const App = () => {
   return (
-    <div className="">
+    <div className="bg-[##28194C]">
       <Router />
     </div>
   );
