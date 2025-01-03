@@ -231,7 +231,7 @@ export function NavBar() {
         //   />
         // </div>
         <div
-          className="bottom-0 w-full md:h-[180px]  mt-10 absolute flex flex-col justify-center items-center "
+          className="bottom-10 w-full md:h-[180px]  absolute flex flex-col justify-center items-center "
           style={{
             backgroundImage: `url(${vector})`,
             objectFit: "object-cover"

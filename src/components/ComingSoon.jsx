@@ -37,10 +37,10 @@ const ComingSoon = () => {
           alt="Background"
           className="max-w-full md:h-[800px]  w-full h-full object-cover"
         />
-        <div className="w-full relative  -mt-24 bg-gradient-to-b  bg-[#362E82] pb-10">
+        <div className="w-full relative   sm:-mt-24 bg-gradient-to-b  bg-[#362E82] pb-10">
           {/* <img src={vector} className="w-full object-cover absolute -mt-10" /> */}
           <div className="w-full max-w-5xl mx-auto flex flex-col gap-10">
-            <div className="flex h-[300px] z-[2] mt-14 md:-mt-20 relative flex-col gap-10 sm:flex-row bg-[#28194cfd] p-4 sm:p-10 rounded-3xl">
+            <div className="flex h-[300px] -mt-[30px] z-[2]  md:-mt-20 relative flex-col gap-10 sm:flex-row bg-[#28194cfd] p-4 sm:p-10 rounded-3xl">
               <div className="flex flex-col gap-2 z-10">
                 <img
                   src={guest}
